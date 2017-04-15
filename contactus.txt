@@ -1,0 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Contact Us</title>
+
+
+</head>
+
+<jsp:include page="header.jsp"></jsp:include>
+
+<body>
+<body bgcolor="#D2B4DE">
+
+
+<section class="content">
+            <div class="container">
+<div class="row">
+<div class="col-sm-4">
+<h3>ContactUs-Mobi World Tech Support </h3>
+<hr>
+<address>
+<strong>Address:</strong>No 105/19,Nelson Samuel Road,Tambaram,Chennai-600044<br>
+<strong>Phone:</strong> +91-9765847112<br>
+<strong>Email us:</strong>feedbacks@helpdesk.com
+</address>
+
+</address>
+</div>
+    
+<div class="col-sm-8 contact-form">
+<form id="contact" method="post" class="form" role="form">
+<div class="row">
+<div class="col-xs-6 col-md-6 form-group">
+<input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+</div>
+<div class="col-xs-6 col-md-6 form-group">
+<input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+</div>
+</div>
+<textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+<br />
+<div class="row">
+<div class="col-xs-12 col-md-12 form-group">
+<button class="btn btn-primary pull-right" type="submit">Submit</button>
+</form>
+</div>
+</div>
+        </section>
+        
+<jsp:include page="footer.jsp"></jsp:include>        

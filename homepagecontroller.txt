@@ -1,0 +1,64 @@
+package com.mobile.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomePageController 
+{
+
+	public HomePageController()
+	{
+	}
+		@RequestMapping("/AboutUs")
+		public String showAboutUs() 
+		{
+					
+		System.out.println("About Us");
+					
+		return "AboutUs";
+		}
+	
+		
+	@RequestMapping("/ContactUs")
+	public String showContactUs() 
+	{
+				
+	System.out.println("Contact Us");
+				
+	return "ContactUs";
+	}
+
+	
+	@RequestMapping("login")
+	public String showlogin() 
+	{
+				
+	System.out.println("Login");
+				
+	return "login";
+	}
+
+	
+	@RequestMapping("/Register")
+	public String showRegister() 
+	{
+				
+	System.out.println("Register");
+				
+	return "Register";
+	}
+
+
+	@RequestMapping("/home")
+	public String showhome() 
+	{
+				
+	System.out.println("home");
+				
+	return "home";
+	}
+	
+	
+}
+
